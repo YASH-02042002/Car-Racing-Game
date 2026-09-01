@@ -1,40 +1,36 @@
-# Retro Car Racer 2D 🏎️
+# 🏎️ RetroRacer: Autonomous 2D Vehicle AI & Game Engine
 
-A classic, fully-featured 2D arcade racing game built entirely in Python using the Pygame library. This project demonstrates object-oriented programming (OOP), custom game state management, and heuristic artificial intelligence.
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Pygame](https://img.shields.io/badge/Pygame-2.6.1-green.svg)
+![PyInstaller](https://img.shields.io/badge/Deployment-Standalone_.exe-orange.svg)
+![AI](https://img.shields.io/badge/AI-Heuristic_Auto_Pilot-black.svg)
 
-## 🌟 Key Features
+## 📌 Overview
+RetroRacer is a production-grade 2D arcade racing engine built entirely from scratch in Python. Moving beyond a standard game loop, this project utilizes a custom **State Machine** architecture to seamlessly manage UI flows and game states. Furthermore, it integrates a **Heuristic AI Auto-Pilot** capable of real-time spatial awareness, autonomous obstacle evasion, and objective tracking without human intervention.
 
-*   **AI Auto-Pilot Mode:** Features a heuristic algorithm that allows the car to autonomously dodge obstacles and chase collectable coins in real-time.
-*   **State Machine Architecture:** Cleanly manages complex game states including Main Menu, Settings, Vehicle Selection (Garage), Active Gameplay, and Pause menus.
-*   **Dynamic Environment:** Implements an infinite scrolling background with a Day/Night cycle that automatically triggers as the player progresses through levels.
-*   **Persistent High Scores:** Utilizes file I/O to track and save the highest score locally across sessions.
-*   **Customizable UI:** Players can toggle audio and switch between multiple retro color themes (Green, Cyan, Magenta, Orange) dynamically.
+## ✨ Key Engineering Features
+* **Heuristic AI Auto-Pilot:** Implements a real-time, distance-based algorithm that calculates proximity thresholds of oncoming obstacles. It dynamically shifts vectors for evasion while simultaneously tracking coordinate paths to maximize coin collection.
+* **State Machine Orchestration:** A robust routing node that cleanly manages 6 independent game states (Menu, Settings, Garage, Playing, Paused, Game Over), eliminating logic overlap and ensuring zero-latency transitions.
+* **Algorithmic Environment Generation:** Features an infinite-scrolling background with dynamic day/night logic triggers, applying modular color-shifting without relying on heavy external image assets.
+* **Production Deployment:** Compiled and packaged via PyInstaller into a standalone executable (`.exe`), allowing users to run the application with zero Python environment dependencies.
 
-## 🛠️ Tech Stack
+## 🏗️ System Architecture
+1. **Event Listener:** Keyboard inputs and OS events are captured via Pygame's event queue.
+2. **State Router:** Analyzes the current game state and routes processing to the appropriate logic block (e.g., Garage Selection vs. Active Race).
+3. **Execution Engine:** 
+   * *Manual Mode:* Translates user input into physical coordinate updates.
+   * *AI Mode:* Bypasses user input, calculates bounding-box proximities, and autonomously applies optimal movement vectors.
+4. **Render Pipeline:** Computes real-time theme colors, HUD updates, and sprite blitting, finally pushing the frame buffer to the display at 60 FPS.
 
-*   **Language:** Python 3.x
-*   **Library:** Pygame (Rendering, Collision Detection, Event Handling, Audio Mixer)
-*   **Deployment:** PyInstaller (Compiled into a standalone `.exe` for Windows)
+## 🚀 Tech Stack
+* **Core Language:** Python 3.11+
+* **Game Engine Library:** Pygame (Rendering, Collision Detection, Audio Mixing)
+* **Packaging & Deployment:** PyInstaller
+* **Architecture Design:** Object-Oriented Programming (OOP), Finite State Machines (FSM)
 
-## 🎮 Controls
+## 💻 Local Installation & Setup
 
-| Action | Key Binding |
-| :--- | :--- |
-| **Steer / Navigate Menus** | `Left Arrow` / `Right Arrow` |
-| **Accelerate** | `Up Arrow` |
-| **Brake / Decelerate** | `Down Arrow` |
-| **Toggle AI Auto-Pilot** | `A` |
-| **Pause Game** | `P` or `ESC` |
-| **Select / Start** | `SPACE` or `ENTER` |
-| **Quit to Menu** | `Q` (While paused or Game Over) |
-
-## 🚀 How to Run
-
-**Play the Executable:**
-1. Download the `RetroRacer` folder from the latest release.
-2. Run `RetroRacer.exe` (No Python installation required).
-
-**Run from Source:**
-1. Clone this repository:
-   ```bash
-   git clone [[https://github.com/yourusername/RetroRacer.git](https://github.com/YASH-02042002/Car-Racing-Game)]
+**1. Clone the repository**
+```bash
+git clone [https://github.com/YASH-02042002/RetroRacer.git](https://github.com/YASH-02042002/RetroRacer.git)
+cd RetroRacer
