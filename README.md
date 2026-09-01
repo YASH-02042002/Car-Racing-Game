@@ -40,7 +40,9 @@ cd CarRacingGame
 pip install pygame
 ```
 ## ⚡Running the Application
+You can run the engine directly from the source code.
+**Start the Game Engine:**
 ```bash
-pip install pygame
+python main.py
 ```
 
