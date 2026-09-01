@@ -39,5 +39,8 @@ cd CarRacingGame
 ```bash
 pip install pygame
 ```
-
+## ⚡Running the Application
+```bash
+pip install pygame
+```
 
