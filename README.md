@@ -5,10 +5,6 @@
 ![PyInstaller](https://img.shields.io/badge/Deployment-Standalone_.exe-orange.svg)
 ![AI](https://img.shields.io/badge/AI-Heuristic_Auto_Pilot-black.svg)
 
-## 🎮 Play The Game (1-Click Download)
-[![Download Windows EXE](https://img.shields.io/badge/Download_RetroRacer-Windows_.exe-success?style=for-the-badge&logo=windows)](https://github.com/YASH-02042002/Car-Racing-Game/releases/latest)
-
-*Simply download the `.zip` from the link above, extract it, and double-click `RetroRacer.exe` to play instantly! No Python setup required.*
 ## 📌 Overview
 RetroRacer is a production-grade 2D arcade racing engine built entirely from scratch in Python. Moving beyond a standard game loop, this project utilizes a custom **State Machine** architecture to seamlessly manage UI flows and game states. Furthermore, it integrates a **Heuristic AI Auto-Pilot** capable of real-time spatial awareness, autonomous obstacle evasion, and objective tracking without human intervention.
 
