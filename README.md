@@ -32,9 +32,12 @@ RetroRacer is a production-grade 2D arcade racing engine built entirely from scr
 
 **1. Clone the repository**
 ```bash
-git clone [https://github.com/YASH-02042002/RetroRacer.git](https://github.com/YASH-02042002/RetroRacer.git)
-cd RetroRacer
-
-**1. Clone the repository**
+git clone (https://github.com/YASH-02042002/Car-Racing-Game)
+cd CarRacingGame
+```
+**2. Install dependencies**
 ```bash
 pip install pygame
+```
+
+
